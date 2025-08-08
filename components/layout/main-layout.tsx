@@ -88,6 +88,9 @@ export function MainLayout({ children }: MainLayoutProps) {
         >
           <TopNav onMenuClick={() => setSidebarOpen(!sidebarOpen)} />
           <main className="flex-1 px-4 py-4 md:px-6 md:py-6 max-w-7xl mx-auto w-full">
+            <nav className="flex space-x-4">
+              <a href="/quiz" className="text-blue-500 hover:underline">Quiz Game</a>
+            </nav>
             <div className="w-full">{children}</div>
           </main>
         </div>
